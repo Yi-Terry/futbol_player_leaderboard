@@ -1,0 +1,7 @@
+pandas
+boto3
+requests
+pyarrow
+awswrangler
+apache-airflow
+pytest
