@@ -32,7 +32,7 @@ resource "aws_s3_object" "processed_prefix" {
 
 resource "aws_s3_object" "athena_results_prefix" {
     bucket = aws_s3_bucket.pipeline_bucket.id
-    key = "athena-results"
+    key = "athena-results/"
 }
 
 output "bucket_name" {
