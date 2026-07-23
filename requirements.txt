@@ -5,3 +5,4 @@ pyarrow
 awswrangler
 apache-airflow
 pytest
+python-dotenv
