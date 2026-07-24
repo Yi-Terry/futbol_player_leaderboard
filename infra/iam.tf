@@ -18,15 +18,15 @@ variable "aws_region" {
 variable "bucket_name" {
     description = "unqiue name for s3 bucket"
     type = string
-    default = "player-leaderboard-pipeline-terry"
+    default = "ny-weather-pipeline-terry"
 }
 
 resource "aws_iam_user" "pipeline_user" {
-    name = "player-leaderboard-pipeline"
+    name = "ny-weather-pipeline"
 }
 
 resource "aws_iam_policy" "pipeline_policy" {
-    name = "PlayerLeaderboardPipelinePolicy"
+    name = "NyWeatherPipelinePolicy"
     description = "Scoped access for the player leaderboard pipeline (s3 + Glue + Athena)"
 
     policy = jsonencode({

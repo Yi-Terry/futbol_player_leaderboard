@@ -1,9 +1,9 @@
 resource "aws_glue_catalog_database" "player_leaderboard_db" {
-    name = "player_leaderboard"
+    name = "ny_weather"
 }
 
 resource "aws_athena_workgroup" "pipeline_work_group" {
-    name = "player-leaderboard-workgroup"
+    name = "ny-weather-workgroup"
     configuration {
         enforce_workgroup_configuration = true
         publish_cloudwatch_metrics_enabled = true
